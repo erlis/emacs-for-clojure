@@ -3,6 +3,7 @@
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'load-path "~/.emacs.d/elisp")
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -24,4 +25,6 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(require 'install)
+(require 'powershell-mode)
 (load "~/.emacs.d/user.el")

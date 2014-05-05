@@ -55,6 +55,11 @@
   '(add-to-list 'ac-modes 'nrepl-mode))
 (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
 
+;; Clojure nRepl compile
+(fset 'compile-and-goto-repl
+      "\C-x\C-s\C-c\C-k\C-c\C-z")
+(global-set-key [f9] 'compile-and-goto-repl)
+
 ;; hippie expand - don't try to complete with file names
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name hippie-expand-try-functions-list))
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name-partially hippie-expand-try-functions-list))
