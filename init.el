@@ -22,12 +22,17 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;;
 ;; smex 
-;;(require 'smex) 
-;;(smex-initialize) 
+;;
+(require 'smex) 
+(smex-initialize) 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands) 
+(ido-mode)
 
-(require 'install)
+;; disabling the startup screen
+(setq inhibit-startup-message t)
+
 (require 'powershell-mode)
 (load "~/.emacs.d/user.el")
