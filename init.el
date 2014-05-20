@@ -10,11 +10,8 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit
-                      starter-kit-lisp
-                      starter-kit-bindings
-                      starter-kit-ruby
-                      clojure-mode
+(defvar my-packages '(smex 
+		      clojure-mode
                       clojure-test-mode
                       nrepl
                       auto-complete
@@ -24,6 +21,12 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;; smex 
+;;(require 'smex) 
+;;(smex-initialize) 
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands) 
 
 (require 'install)
 (require 'powershell-mode)
