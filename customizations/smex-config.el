@@ -1,4 +1,3 @@
-
 (require 'smex)
 
 ;; key binding
