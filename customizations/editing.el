@@ -74,10 +74,6 @@
 
 ;;(setq electric-indent-mode nil)
 
-;; save/restore opened files and windows config
-(desktop-save-mode 1) ; 0 for off
-(setq desktop-save t)
-
 ;;;; Magit
 ;; global key biding
 (global-set-key (kbd "C-x g") 'magit-status)

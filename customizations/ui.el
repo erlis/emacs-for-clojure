@@ -26,7 +26,9 @@
 
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil
+                    :family "Anonymous Pro"
+                    :height 110)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
@@ -65,7 +67,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-
 ;;;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
 ;; for a great explanation of emacs color themes.
@@ -74,3 +75,9 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 (load-theme 'tomorrow-night-eighties t)
+
+;;;; Desktop Save Mode
+;; save/restore opened files and windows config
+(desktop-save-mode 1) ; 0 for off
+(setq desktop-save t)
+
