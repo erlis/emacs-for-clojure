@@ -81,3 +81,9 @@
 ;;;; Magit
 ;; global key biding
 (global-set-key (kbd "C-x g") 'magit-status)
+
+
+;;;; multiple cursors
+(require 'multiple-cursors)
+;; when you have an active region that spans multiple lines, the following will add a cursor to each line
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)

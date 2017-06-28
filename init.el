@@ -75,6 +75,9 @@
     ;; edit html tags like sexps
     tagedit
 
+    ;; multiple cursors
+    multiple-cursors
+
     ;; git integration
     magit))
 
@@ -134,19 +137,8 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit)))
+    (json-mode magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit)))
  '(tab-width 4))
-
-
-
-
-;(load "smex-config.el")
-
-;(load "ui.el")
-
-
-;; language specific
-;(load "setup-clojure.el")
 
 
 (custom-set-faces
