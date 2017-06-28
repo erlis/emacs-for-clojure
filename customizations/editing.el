@@ -83,7 +83,22 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 
+;;
 ;;;; multiple cursors
+;;
 (require 'multiple-cursors)
 ;; when you have an active region that spans multiple lines, the following will add a cursor to each line
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+;; when you want to add multiple cursors not based on continous lines, but based on keywords in the buffer, use:
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
+
+;; First mark the word, then add more cursors.
+;; To get out of multiple-cursors-mode, press <return> or C-g.
+;; The latter will first disable multiple regions before disabling multiple cursors.
+;; If you want to insert a newline in multiple-cursors-mode, use C-j.
+
+
