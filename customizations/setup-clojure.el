@@ -25,6 +25,9 @@
             (define-clojure-indent (fact 1))
             (define-clojure-indent (facts 1))))
 
+;; Clojure indentation
+(setq clojure-indent-style :always-indent)
+
 ;;;;
 ;; Cider
 ;;;;

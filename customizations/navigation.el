@@ -28,6 +28,10 @@
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
 (ido-mode t)
 
+;; Use ido everywhere!!
+(require 'ido-completing-read+)
+(ido-ubiquitous-mode 1)
+
 ;; This allows partial matches, e.g. "tl" will match "Tyrion Lannister"
 (setq ido-enable-flex-matching t)
 

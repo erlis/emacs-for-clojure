@@ -56,10 +56,8 @@
     ;; https://github.com/clojure-emacs/cider
     cider
 
-    ;; allow ido usage in as many contexts as possible. see
-    ;; customizations/better-defaults.el line 47 for a description
-    ;; of ido
-    ido-ubiquitous
+    ;; allow ido usage in as many contexts as possible.
+    ido-completing-read+   
 
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
@@ -137,7 +135,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (json-mode magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit)))
+    (csharp-mode json-mode magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit)))
  '(tab-width 4))
 
 
