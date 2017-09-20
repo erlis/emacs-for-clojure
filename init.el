@@ -49,6 +49,9 @@
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
 
+    ;; F# mode
+    fsharp-mode
+
     ;; extra syntax highlighting for clojure
     clojure-mode-extra-font-locking
 
@@ -123,9 +126,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Langauage-specific
+;; Language-specific
 (load "setup-clojure.el")
-
+(load "setup-fsharp.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

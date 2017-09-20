@@ -58,6 +58,9 @@
 ;; No cursor blinking, it's distracting
 (blink-cursor-mode 0)
 
+;; display column and line numbers
+(setq column-number-mode t)
+
 ;; full path in title bar
 (setq-default frame-title-format "%b (%f)")
 
