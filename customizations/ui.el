@@ -84,3 +84,5 @@
 (desktop-save-mode 1) ; 0 for off
 (setq desktop-save t)
 
+(persistent-scratch-setup-default)
+

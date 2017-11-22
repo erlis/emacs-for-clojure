@@ -49,6 +49,9 @@
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
 
+    ;; persisting the scratch
+    persistent-scratch
+
     ;; F# mode
     fsharp-mode
 
